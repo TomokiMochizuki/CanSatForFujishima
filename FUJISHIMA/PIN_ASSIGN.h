@@ -16,8 +16,14 @@
 
 #define PIN_CAM2_SS 7
 
-#define PIN_DC_MOTER1 5
-#define PIN_DC_MOTER2 6
+int PIN_DC_MOTER1 = 5;
+int PIN_DC_MOTER2 = 6;
+int PIN_DC_MOTER3 = 3;
+int PIN_DC_MOTER4 = 4;
+int PIN_DC_MOTER5 = 7;
+int PIN_DC_MOTER6 = 8;
+int PIN_DC_MOTER7 = 9;
+int PIN_DC_MOTER8 = 10;
 
 // #define SDA A4
 // #define SCL A5

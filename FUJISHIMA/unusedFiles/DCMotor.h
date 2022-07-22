@@ -10,15 +10,15 @@ https://akizukidenshi.com/catalog/g/gK-09848/
 #include "./PIN_ASSIGN.h"
 
 // 初期化
-void DCM_Init(int PIN_DC_MOTER1, int PIN_DC_MOTER2);
+void DCM_Init();
 // 空転させる
-void DCM_COAST(int PIN_DC_MOTER1, int PIN_DC_MOTER2);
+void DCM_COAST();
 // 正転させる
-void DCM_FORWARD(int PIN_DC_MOTER1, int PIN_DC_MOTER2);
+void DCM_FORWARD();
 // 逆転させる
-void DCM_REVERSE(int PIN_DC_MOTER1, int PIN_DC_MOTER2);
+void DCM_REVERSE();
 // ブレーキさせる
-void DCM_BRAKE(int PIN_DC_MOTER1, int PIN_DC_MOTER2);
+void DCM_BRAKE();
 
 typedef struct {
 } DcMotor_t;
