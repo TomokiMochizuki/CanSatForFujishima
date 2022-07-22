@@ -15,7 +15,9 @@ void setup()
 	delay(300);
 }
 
- Serial.println(F("DCM1 Brake"));
+void loop()
+{
+  Serial.println(F("DCM1 Brake"));
   DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
   delay(2000);      // 5000 ms 待つ
   Serial.println(F("DCM1 Forward"));
@@ -33,7 +35,7 @@ void setup()
   Serial.println(F("DCM1 Forward"));
   DCM_FORWARD(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 正転
   delay(500);      // 5000 ms 待つ
-
+}
 
 
 
