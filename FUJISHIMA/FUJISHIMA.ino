@@ -1,18 +1,18 @@
-#include "./DCMotor.h"
+  #include "./DCMotor.h"
 #include "./DCMotor2.h"
-#ifndef BTH_H
+//#ifndef BTH_H
 #define BTH_H
 
 #include "./PIN_ASSIGN.h"
 #include <Wire.h>
 
 // #################### Barometer & Thermohygrometer ####################
-float a, b, c, d;
-a = 0.00;
-pressure = 0.00;
-b = 5000.00;
-wihle(a == 1.00)
-{
+float a = 0.00;
+float pressure = 0.00;
+float b = 5000.00;
+
+while (1)
+{ 
   if(b >= pressure)
   b = pressure;
   
@@ -36,11 +36,11 @@ typedef struct {
   float   temperature;
 } BarometerThermohygrometer_t;
 
-a=1.00
 if(b+1<=pressure)
+{
 break;
 }
-
+}
 
 
 
@@ -59,21 +59,23 @@ void setup()
   delay(300);
 }
 
- Serial.println(F("DCM1 Brake"));
-  DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
-  delay(2000);      // 5000 ms 待つ
-  Serial.println(F("DCM1 Forward"));
-  DCM_FORWARD(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 正転
-  delay(500);      // 5000 ms 待つ
-  Serial.println(F("DCM1 Brake"));
-  DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
-  delay(2000);      // 5000 ms 待つ
-  Serial.println(F("DCM Reverse"));
-  DCM_REVERSE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 逆転
-  delay(1000);      // 5000 ms 待つ
-  Serial.println(F("DCM1 Brake"));
-  DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
-  delay(2000);      // 5000 ms 待つ
-  Serial.println(F("DCM1 Forward"));
-  DCM_FORWARD(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 正転
-  delay(500);      // 5000 ms 待つ
+
+  //Serial.println(F("DCM1 Brake"));
+  //DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
+  //delay(2000);      // 5000 ms 待つ
+  //Serial.println(F("DCM1 Forward"));
+  //DCM_FORWARD(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 正転
+  //delay(500);      // 5000 ms 待つ
+  //Serial.println(F("DCM1 Brake"));
+  //DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
+  //delay(2000);      // 5000 ms 待つ
+  //Serial.println(F("DCM Reverse"));
+  //DCM_REVERSE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 逆転
+  //delay(1000);      // 5000 ms 待つ
+  //Serial.println(F("DCM1 Brake"));
+  //DCM_BRAKE(PIN_DC_MOTER1, PIN_DC_MOTER2);      // ブレーキ
+  //delay(2000);      // 5000 ms 待つ
+  //Serial.println(F("DCM1 Forward"));
+  //DCM_FORWARD(PIN_DC_MOTER1, PIN_DC_MOTER2);      // 正転
+  //delay(500);      // 500 ms 待つ
+ 
